@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Course - DigitalGrow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="dashboard-header">
+
+            <div>
+                <h1>DigitalGrow</h1>
+                <p>Digital Marketing Training</p>
+            </div>
+
+            <a href="courses.html">
+                Back to Courses
+            </a>
+
+        </header>
+
+
+        <main>
+
+            <section class="welcome-card">
+
+                <h2 id="courseTitle">
+                    Loading course...
+                </h2>
+
+                <p id="courseDescription"></p>
+
+            </section>
+
+
+            <h2>Lessons</h2>
+
+            <div id="lessonsContainer">
+
+                <p>Loading lessons...</p>
+
+            </div>
+
+
+            <button id="completeBtn">
+                Mark Course as Completed
+            </button>
+
+            <p id="message"></p>
+
+        </main>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/supabase.js"></script>
+
+    <script src="js/course.js"></script>
+
+</body>
+
+</html>

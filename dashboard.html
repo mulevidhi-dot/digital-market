@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - DigitalGrow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Header -->
+        <header class="dashboard-header">
+
+            <div>
+                <h1>DigitalGrow</h1>
+
+                <p>
+                    Digital Marketing Training Portal
+                </p>
+            </div>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </header>
+
+
+        <main>
+
+            <!-- Welcome Section -->
+            <section class="welcome-card">
+
+                <h2 id="welcomeMessage">
+                    Welcome!
+                </h2>
+
+                <p>
+                    Learn digital marketing skills
+                    and grow your business online.
+                </p>
+
+            </section>
+
+
+            <!-- Business Profile -->
+            <section class="profile-card">
+
+                <h2>Your Business</h2>
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="userName">
+                        Loading...
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Business:</strong>
+                    <span id="businessName">
+                        Loading...
+                    </span>
+                </p>
+
+                <p>
+                    <strong>Business Type:</strong>
+                    <span id="businessType">
+                        Loading...
+                    </span>
+                </p>
+
+            </section>
+
+
+            <!-- Statistics -->
+            <section class="stats">
+
+                <div class="stat-card">
+
+                    <h3 id="courseCount">
+                        0
+                    </h3>
+
+                    <p>
+                        Courses Available
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3 id="completedCount">
+                        0
+                    </h3>
+
+                    <p>
+                        Courses Completed
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3 id="progressPercent">
+                        0%
+                    </h3>
+
+                    <p>
+                        Your Progress
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Dashboard Actions -->
+            <section class="dashboard-actions">
+
+                <a href="courses.html"
+                   class="dashboard-button">
+
+                    View Courses
+
+                </a>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Supabase Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+    <!-- Supabase Connection -->
+    <script src="js/supabase.js"></script>
+
+
+    <!-- Dashboard JavaScript -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

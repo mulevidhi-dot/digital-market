@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account - DigitalGrow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>DigitalGrow</h1>
+
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+
+            <label>Full Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label>Business Name</label>
+            <input
+                type="text"
+                id="businessName"
+                placeholder="Enter your business name"
+                required
+            >
+
+            <label>Business Type</label>
+            <input
+                type="text"
+                id="businessType"
+                placeholder="Example: Bakery, Clothing, Grocery"
+            >
+
+            <label>Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+            >
+
+            <label>Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter email"
+                required
+            >
+
+            <label>Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Create password"
+                required
+            >
+
+            <button type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <p>
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+    </div>
+
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/supabase.js"></script>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>
